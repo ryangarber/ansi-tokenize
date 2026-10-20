@@ -20,7 +20,7 @@ export function styledCharsFromTokens(tokens: Token[]): StyledChar[] {
 		} else if (token.type === "char") {
 			ret.push({
 				...token,
-				styles,
+				styles: [...styles],
 			});
 		}
 	}
